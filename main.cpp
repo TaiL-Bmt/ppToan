@@ -70,7 +70,7 @@ void testTimeExecution()
     auto end = std::chrono::high_resolution_clock::now();
     double timeTaken = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
     timeTaken /= 1000000;
-    std::cout << timeTaken << std::endl;
+    std::cout << "Addition: " << timeTaken << std::endl;
 
     // Substraction oprator
     start = std::chrono::high_resolution_clock::now();
@@ -82,7 +82,7 @@ void testTimeExecution()
     end = std::chrono::high_resolution_clock::now();
     timeTaken = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
     timeTaken /= 1000000;
-    std::cout << timeTaken << std::endl;
+    std::cout << "Substraction: " << timeTaken << std::endl;
 
     // Multiplication opeartor
     start = std::chrono::high_resolution_clock::now();
@@ -94,6 +94,6 @@ void testTimeExecution()
     end = std::chrono::high_resolution_clock::now();
     timeTaken = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
     timeTaken /= 1000000;
-    std::cout << timeTaken << std::endl;
+    std::cout << "Multiplication: " << timeTaken << std::endl;
 }
 
