@@ -1,1 +1,2 @@
 # ppToan
+g++ main.cpp
